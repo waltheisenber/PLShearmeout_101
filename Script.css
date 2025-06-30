@@ -1,0 +1,26 @@
+const yesBtn = document.getElementById("yes-btn");
+const noBtn = document.getElementById("no-btn");
+const confession = document.getElementById("confession");
+
+yesBtn.onclick = () => {
+  confession.textContent = `Rochelle, I just wanna say this to you.
+
+It’s been on my mind a lot and I can’t seem to focus lately — you’ve been running through my thoughts nonstop.
+
+And so, I just want to ask: pwede ba kitang ligawan?
+Whether may chance man o wala, I'm still here — willing to wait and court you genuinely.
+
+I’m not rushing or expecting anything. I just wanted to be honest about how I feel.
+If ever you develop feelings for me someday, out of nowhere, I’ll still be here — the same guy who really likes you.
+
+No pressure, no drama. Just me — hoping, waiting, and respecting you.
+Thank you for reading this far. 😊`;
+};
+
+noBtn.onmouseover = () => {
+  const randomX = Math.floor(Math.random() * 300);
+  const randomY = Math.floor(Math.random() * 300);
+  noBtn.style.position = "absolute";
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
+};
